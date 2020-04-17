@@ -67,6 +67,7 @@ namespace ReliveThePast
 
         public void RevivePlayer(ReferenceHub rh)
         {
+            if ( rh.GetRole() != RoleType.Spectator ) return;
             int num = randNum.Next(0, 7);
 
             switch (num)
